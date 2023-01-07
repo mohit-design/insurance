@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>Lead Policy Details :: Insurance</title>
+  <!-- Favicon Icon -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" href="css/all.min.css" type="text/css" />
+	<!-- Bootstrap-5 Minified CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+  <!-- Bootstrap Datepicker CSS -->
+	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css" type="text/css" />
+	<!-- SumoSelect Minified CSS -->
+	<link rel="stylesheet" href="css/sumoselect.min.css" type="text/css" />
+	<!-- Style CSS -->
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+	<!-- Media CSS -->
+	<link rel="stylesheet" href="css/media.css" type="text/css" />
+</head>
+<body>
+  <!-- Fixed Sidebar Menu Section Starts -->
+	<div class="fixed-sidebar">
+		<div class="fixed-sidebar-heading">
+			<h1>Dashboard</h1>
+			<i class="fas fa-times-circle"></i>		
+		</div>
+		<ul class="sidebar-menu-listing">
+			<li><a href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+			</li>
+			<li>
+				<a href="#"><i class="fas fa-users"></i> Users <i class="fas fa-chevron-right"></i></a>
+				<ul class="sidebar-sub-menu-listing">
+					<li><a href="user-lists.html">User Lists</a></li>
+					<li><a href="user-details.html">User Details</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#"><i class="fa-solid fa-person-military-pointing"></i> Customers <i class="fas fa-chevron-right"></i></a>
+				<ul class="sidebar-sub-menu-listing">
+					<li><a href="customer-lists.html">Customer Lists</a></li>
+					<li><a href="customer-details.html">Customer Details</a></li>
+				</ul>
+			</li>
+			<li class="active">
+				<a href="#"><i class="fa-solid fa-person"></i> Leads <i class="fas fa-chevron-right"></i></a>
+				<ul class="sidebar-sub-menu-listing">
+					<li><a href="lead-lists.html">Lead Lists</a></li>
+					<li><a href="lead-policy-details.html">Lead Policy Details</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#"><i class="fa-solid fa-user-nurse"></i> Retail Health Policy <i class="fas fa-chevron-right"></i></a>
+				<ul class="sidebar-sub-menu-listing">
+					<li><a href="retail-health-policy-lists.html">Retail Health Policy Lists</a></li>
+					<li><a href="retail-health-policy-details.html">Retail Health Policy Details</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#"><i class="fa-regular fa-life-ring"></i> Retail Life Policy <i class="fas fa-chevron-right"></i></a>
+				<ul class="sidebar-sub-menu-listing">
+					<li><a href="retail-life-policy-lists.html">Retail Life Policy Lists</a></li>
+					<li><a href="retail-life-policy-details.html">Retail Life Policy Details</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#"><i class="fa-solid fa-motorcycle"></i> Motor Policy <i class="fas fa-chevron-right"></i></a>
+				<ul class="sidebar-sub-menu-listing">
+					<li><a href="motor-policy-lists.html">Motor Policy Lists</a></li>
+					<li><a href="motor-policy-details.html">Motor Policy Details</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#"><i class="fa-sharp fa-solid fa-chalkboard-user"></i> Corporate Policy <i class="fas fa-chevron-right"></i></a>
+				<ul class="sidebar-sub-menu-listing">
+					<li><a href="corporate-policy-lists.html">Corporate Policy Lists</a></li>
+					<li><a href="corporate-policy-details.html">Corporate Policy Details</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- Fixed Sidebar Menu Section Ends -->
+	<!-- Wrapper Section Starts -->
+	<div class="wrapper">
+		<!-- Header Section Starts -->
+		<div class="container-fluid bg-header-desktop">
+			<div class="row d-flex align-items-center">
+				<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+					<div class="burger-menu">
+						<span></span>
+					</div>
+				</div>
+				<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+					<p class="admin-panel">Insurance</p>
+				</div>
+				<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+					<ul class="header-menu-listing d-flex align-items-center justify-content-end">
+						<li>
+							<a href="#">
+								<i class="fas fa-envelope"></i>
+								<span>2</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fas fa-bell"></i>
+								<span>7</span>
+							</a>
+						</li>
+						<li>
+							<a href="" class="profile"><img src="images/profile.svg" class="img-responsive" alt="" /></a>
+							<ul class="header-sub-menu-listing">
+								<li><a href=""><i class="fas fa-user"></i> Profile</a></li>
+								<li><a href=""><i class="fas fa-envelope"></i> Inbox</a></li>
+								<li><a href="signin.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Header Section Ends -->
+		<!-- Add New Users Section Starts -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="card card-dashboard mb-15">
+						<div class="card-header">Lead Policy Details</div>
+						<div class="card-body p-0">
+              <div class="card-inner-body border-bottom pb-0">
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Customer Search:</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Customer Search">
+                        <span class="input-group-text cursor-pointer">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Mandate Letter:</label>
+                      <div class="mt-6">
+                        <div class="form-check d-inline-block">
+                          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                          Yes
+                          <label class="form-check-label" for="radio1"></label>
+                        </div>
+                        <div class="form-check d-inline-block">
+                          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                          No
+                          <label class="form-check-label" for="radio2"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Status:</label>
+                      <label class="form-label-value d-block">Completed</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-inner-body border-bottom">
+                <div class="row">
+                  <div class="col-12">
+                    <button type="button" class="btn btn-save mr-3">Save</button>
+                    <button type="button" class="btn btn-clear">Clear</button>
+                </div>
+                </div>
+              </div>
+              <div class="card-inner-body pb-0">
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Policy Department: <sup class="required-field">Required</sup></label>
+                      <select class="form-control sumoselect search">
+                        <option value="">Select</option>
+                        <option value="">Agriculture</option>
+                        <option value="">Engineering</option>
+                        <option value="">Credit</option>
+                        <option value="">Fire</option>
+                        <option value="">Health</option>
+                        <option value="">Liability</option>
+                        <option value="">Marine</option>
+                        <option value="">Misc</option>
+                        <option value="">Motor</option>
+                        <option value="">Overseas</option>
+                        <option value="">Package Policy</option>
+                        <option value="">Life</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Policy Name:</label>
+                      <select class="form-control sumoselect search">
+                        <option value="">Select</option>
+                        <option value="">Individual Policy</option>
+                        <option value="">Floater Family Policy</option>
+                        <option value="">Critical Health</option>
+                        <option value="">Topup Policy</option>
+                        <option value="">Super Topup Policy</option>
+                        <option value="">MOS-Bite Policy</option>
+                        <option value="">Individual Term Life</option>
+                        <option value="">Money back Policies</option>
+                        <option value="">Agriculture Tractor Policy</option>
+                        <option value="">Goods Carrying</option>
+                        <option value="">Kisan Suvidha Bima Policy</option>
+                        <option value="">Motor Liability 1 year policy</option>
+                        <option value="">Motor Misc Policy</option>
+                        <option value="">Motor Trade Internal Risk</option>
+                        <option value="">Motor Trade Road Transit Risk</option>
+                        <option value="">Motor Trade Road Transit Risk - TP only</option>
+                        <option value="">Passenger Carrying</option>
+                        <option value="">PCCV 2 Wheeler</option>
+                        <option value="">Private Car</option>
+                        <option value="">Private Car - Comprehensive 1 year Policy</option>
+                        <option value="">Trailer Package Policy</option>
+                        <option value="">Two Wheeler</option>
+                        <option value="">Two Wheeler - 1 year Comprehensive Policy</option>
+                        <option value="">Two Wheeler - 2 year Comprehensive Policy</option>
+                        <option value="">Two Wheeler - 3 year Comprehensive Policy</option>
+                        <option value="">Weather Insurace</option>
+                        <option value="">Crop Insurance</option>
+                        <option value="">Credit Insurance</option>
+                        <option value="">Advance Loss of Profit</option>
+                        <option value="">Contractors Plant and Machinary </option>
+                        <option value="">Boiler and Pressure Plant</option>
+                        <option value="">Contractor All Risk</option>
+                        <option value="">Erection All Risk</option>
+                        <option value="">Electrical Equipment Policy</option>
+                        <option value="">Machinary Breakdown</option>
+                        <option value="">Machinary Loss of Profit</option>
+                        <option value="">Portable Equipment All Risk</option>
+                        <option value="">Fire Loss Of Profit</option>
+                        <option value="">Standard Fire and Special Perils</option>
+                        <option value="">Corona Kavach</option>
+                        <option value="">Group Medical</option>
+                        <option value="">Family Floater</option>
+                        <option value="">Individual Health Insurance</option>
+                        <option value="">Group Personal Accident</option>
+                        <option value="">Inividual Personal Accident</option>
+                        <option value="">Super Top Up</option>
+                        <option value="">MOS-BITE</option>
+                        <option value="">Individual Term Life</option>
+                        <option value="">Group Term Life</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Policy Short Name:</label>
+                      <input type="text" class="form-control" id="policyShortName" placeholder="Enter Policy Short Name" name="policy-short-name" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Registration Number:</label>
+                      <input type="text" class="form-control" id="registrationNumber" placeholder="Enter Registration Number" name="registration-number" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Vehicle Details:</label>
+                      <input type="text" class="form-control" id="vehicleDetails" placeholder="Enter Vehicle Details" name="vehicle-details" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Floater / Individual:</label>
+                      <select class="form-control sumoselect search">
+                        <option value="">Select</option>
+                        <option value="">Floater</option>
+                        <option value="">Individual</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Remarks:</label>
+                      <input type="text" class="form-control" id="remarks" placeholder="Enter Remarks" name="remarks" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Policy Sum Insured:</label>
+                      <input type="text" class="form-control" id="policySumInsured" placeholder="Enter Policy Sum Insured" name="policy-sum-insured" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Insurer City / Branch:</label>
+                      <input type="text" class="form-control" id="insurerCityBranch" placeholder="Enter Insurer City / Branch" name="insurer-city-branch" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Inception Date:</label>
+                      <input type="text" class="form-control" id="inceptionDate" placeholder="Enter Inception Date" name="inception-date" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Premium Without GST:</label>
+                      <input type="text" class="form-control" id="premiumWithoutGST" placeholder="Enter Premium Without GST" name="premium-without-GST" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">GST Rate:</label>
+                      <input type="text" class="form-control" id="GSTRate" placeholder="Enter GST Rate" name="GST-Rate" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Premium With GST:</label>
+                      <input type="text" class="form-control" id="premiumWithGST" placeholder="Enter Premium With GST" name="premium-with-GST" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Existing Broker / Agent:</label>
+                      <input type="text" class="form-control" id="existingBrokerAgent" placeholder="Enter Existing Broker / Agent" name="existing-broker-agent" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Status:</label>
+                      <select class="form-control sumoselect search">
+                        <option value="">Aggressively following</option>
+                        <option value="">Moderately following</option>
+                        <option value="">WIN</option>
+                        <option value="">LOST</option>
+                        <option value="">Not Participating</option>
+                        <option value="">Awaiting quote</option>
+                        <option value="">Quotes submitted</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Comment Box:</label>
+                      <input type="text" class="form-control" id="commentBox" placeholder="Enter Comment Box" name="comment-box" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Is Policy Copy Received?:</label>
+                      <div class="mt-6">
+                        <div class="form-check d-inline-block">
+                          <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                          Yes
+                          <label class="form-check-label" for="radio1"></label>
+                        </div>
+                        <div class="form-check d-inline-block">
+                          <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                          No
+                          <label class="form-check-label" for="radio2"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Business Type:</label>
+                      <select class="form-control sumoselect search">
+                        <option value="">Fresh</option>
+                        <option value="">Our Renewal</option>
+                        <option value="">Market Renewal</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-sub-dashboard mb-15">
+                  <div class="card-header">Authorization</div>
+                  <div class="card-body pb-0">
+                    <div class="row">
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <div class="form-group-label-input">
+                          <label class="form-label">Send To:</label>
+                          <select class="form-control sumoselect search">
+                            <option value="">Parth Shah</option>
+                            <option value="">Hardik Vyas</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <div class="form-group-label-input">
+                          <label class="form-label">Send For:</label>
+                          <select class="form-control sumoselect search">
+                            <option value="">Task 1</option>
+                            <option value="">Task 2</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <div class="form-group-label-input">
+                          <label class="form-label">Stage Ownership:</label>
+                          <select class="form-control sumoselect search">
+                            <option value="">Stage Ownership 1</option>
+                            <option value="">Stage Ownership 2</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <div class="form-group-label-input">
+                          <label class="form-label">To Be Completed by:</label>
+                          <select class="form-control sumoselect search">
+                            <option value="">Parth Shah</option>
+                            <option value="">Hardik Vyas</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <div class="form-group-label-input">
+                          <label class="form-label">To Be Completed Date:</label>
+                          <input type="text" class="form-control" id="completedDate" placeholder="Enter Completed Date" name="completed-date" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="row">
+                      <div class="col-12">
+                        <button type="button" class="btn btn-save mr-3">Save</button>
+                        <button type="button" class="btn btn-clear">Clear</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Attachment(Upload Documents):</label>
+                      <input type="file" class="form-control" id="attachmentFile" name="attachmentFile" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Attached File Name:</label>
+                      <input type="text" class="form-control" id="attachedFileName" placeholder="Enter Attached File Name" name="attached-file-name" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Comment:</label>
+                      <textarea class="form-control" name="attachment-desc" id="attachmentDesc" rows="1"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-inner-body py-0">
+                <div class="card card-sub-dashboard mb-15">
+                  <div class="card-header">Insurer Details</div>
+                  <div class="card-body pb-0">
+                    <div class="row align-items-end">
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <div class="form-group-label-input">
+                          <label class="form-label">Insurer Name:</label>
+                          <select class="form-control sumoselect search">
+                            <option value="">Select</option>
+                            <option value="">LIC</option>
+                            <option value="">Bajaj</option>
+                            <option value="">National Insurance</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <div class="form-group-label-input">
+                          <label class="form-label">Insurer Name:</label>
+                          <input type="text" class="form-control" placeholder="Enter Insurer Share" />
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <div class="form-group-input">
+                          <button type="button" class="btn btn-save">Add</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row align-items-end">
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <div class="form-group-label-input">
+                          <label class="form-label">Insurer Name:</label>
+                          <select class="form-control sumoselect search">
+                            <option value="">Select</option>
+                            <option value="">LIC</option>
+                            <option value="">Bajaj</option>
+                            <option value="">National Insurance</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <div class="form-group-label-input">
+                          <label class="form-label">Insurer Name:</label>
+                          <input type="text" class="form-control" placeholder="Enter Insurer Share" />
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <div class="form-group-input">
+                          <button type="button" class="btn btn-save mr-3">Add</button>
+                          <button type="button" class="btn btn-delete">Delete</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="row">
+                      <div class="col-12">
+                        <button type="button" class="btn btn-save mr-3">Save</button>
+                        <button type="button" class="btn btn-clear">Clear</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-sub-dashboard mb-15">
+                  <div class="card-header">Broker Details</div>
+                  <div class="card-body pb-0">
+                    <div class="row">
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <div class="form-group-input">
+                          <input type="text" class="form-control" placeholder="Enter Broker Name" />
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <div class="form-group-input">
+                          <input type="text" class="form-control" placeholder="Enter Broker Share" />
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <div class="form-group-input">
+                          <button type="button" class="btn btn-save">Add</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <div class="form-group-input">
+                          <input type="text" class="form-control" placeholder="Enter Broker Name" />
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <div class="form-group-input">
+                          <input type="text" class="form-control" placeholder="Enter Broker Share" />
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <div class="form-group-input">
+                          <button type="button" class="btn btn-save mr-3">Add</button>
+                          <button type="button" class="btn btn-delete">Delete</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="row">
+                      <div class="col-12">
+                        <button type="button" class="btn btn-save mr-3">Save</button>
+                        <button type="button" class="btn btn-clear">Clear</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-sub-dashboard mb-15">
+                  <div class="card-header">Claim History</div>
+                  <div class="card-body pb-0">
+                    <div class="row">
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <div class="form-group-label-input">
+                          <label class="form-label">Claim Year:</label>
+                          <select class="form-control sumoselect search">
+                            <option value="">2020 - 2021</option>
+                            <option value="">2021 - 2022</option>
+                            <option value="">2022 - 2023</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <div class="form-group-label-input">
+                          <label class="form-label">Total Claim Count:</label>
+                          <input type="text" class="form-control" id="totClaimCount" placeholder="Enter Total Claim Count" name="tot-claim-count" />
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                        <div class="form-group-label-input">
+                          <label class="form-label">Claim Details:</label>
+                          <textarea class="form-control" id="claimDetails" placeholder="Enter Claim Details" rows="1"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <div class="row">
+                      <div class="col-12">
+                        <button type="button" class="btn btn-save mr-3">Save</button>
+                        <button type="button" class="btn btn-clear">Clear</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Status:</label>
+                      <select class="form-control sumoselect search">
+                        <option value="">Win</option>
+                        <option value="">Loss</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Attachment(Upload Documents):</label>
+                      <input type="file" class="form-control" id="attachmentFile" name="attachmentFile" />
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Attached File Name:</label>
+                      <input type="text" class="form-control" id="attachedFileName" placeholder="Enter Attached File Name" name="attached-file-name" />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Comment:</label>
+                      <textarea class="form-control" name="attachment-desc" id="attachmentDesc" rows="1"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group-label-input">
+                      <label class="form-label">Final Comment:</label>
+                      <textarea class="form-control" name="attachment-desc" id="attachmentDesc" rows="1"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+						</div>
+						<div class="card-footer">
+							<div class="row">
+								<div class="col-12">
+									<button type="button" class="btn btn-save">Send for Booking</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Add New Users Section Starts -->
+	</div>
+	<!-- Wrapper Section Ends -->
+  <!-- jQuery Library -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Bootstrap-5 Minified JS -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Bootstrap DatePicker JS -->
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<!-- SumoSelect Minified JS -->
+	<script src="js/jquery.sumoselect.min.js"></script>
+	<!-- Input Mask -->
+  <script src="js/jquery.inputmask.bundle.js"></script>
+  <!-- Custom Datepicker JS -->
+  <script src="js/custom-datepicker.js"></script>
+	<!-- Custom JS -->
+	<script src="js/main.js"></script>
+</body>
+</html>

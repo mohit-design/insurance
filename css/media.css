@@ -1,0 +1,55 @@
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+
+/*------- Fixed Sidebar Section Starts -------*/
+
+.fixed-sidebar {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.fixed-sidebar.active {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+.fixed-sidebar-heading > h1 {
+  font-size: 1.8rem;
+}
+
+/*------- Fixed Sidebar Section Ends -------*/
+
+/*------- Wrapper Section Starts -------*/
+
+.wrapper {
+  margin: 65px 0 0;
+}
+
+/*------- Wrapper Section Ends -------*/
+
+/*------- Header Section Starts -------*/
+
+.bg-header-desktop {
+  padding: 0 15px;
+}
+.admin-panel {
+  font-size: 1.8rem;
+}
+.header-menu-listing > li:not(:last-child) {
+  display: none;
+}
+
+/*------- Header Section Ends -------*/
+
+/*------- Card CSS Starts -------*/
+
+.card-dashboard > .card-header {
+  font-size: 1.6rem;
+}
+
+/*------- Card CSS Ends -------*/
+
+}

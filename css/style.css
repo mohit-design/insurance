@@ -1,0 +1,938 @@
+/*------- Font Family Starts -------*/
+
+@font-face {
+  font-family: "Quicksand-Light";
+  src: url("../fonts/Quicksand-Light.ttf");
+}
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("../fonts/Quicksand-Regular.ttf");
+}
+@font-face {
+  font-family: "Quicksand-Medium";
+  src: url("../fonts/Quicksand-Medium.ttf");
+}
+@font-face {
+  font-family: "Quicksand-SemiBold";
+  src: url("../fonts/Quicksand-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Quicksand-Bold";
+  src: url("../fonts/Quicksand-Bold.ttf");
+}
+
+/*------- Font Family Ends -------*/
+
+/*------- Reset CSS Starts -------*/
+
+html {
+  font-size: 10px;
+  letter-spacing: 0.5px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+label {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a,
+a:hover,
+a:focus {
+  outline: 0;
+  text-decoration: none;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+/*------- Reset CSS Ends -------*/
+
+/*------- Common CSS Starts -------*/
+
+body {
+  background-color: var(--ghostWhite);
+}
+.container-fluid {
+  padding: 0 15px 15px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+  /*------- Color Variable CSS Starts -------*/
+
+:root {
+  --white: #ffffff;
+  --ghostWhite: #f1f3fc;
+  --gray: #ced4da;
+  --lightGray: #e7e7e7;
+  --darkGray: #7e7e7e;
+  --black: #000000;
+  --blue: #0d6efd;
+  --skyBlue: #03a9f4;
+  --darkBlue: #0b5ed7;
+  --green: #4caf50;
+  --lightGreen: #a3ffa6;
+  --darkGreen: #1c9320;
+  --red: #f44336;
+  --lightRed: #f7b4ae;
+  --darkRed: #e70000;
+  --yellow: #ffc20b;
+  --navyTeal: #225770;
+  --lochmara: #123a4c;
+}
+
+  /*------- Color Variable CSS Ends -------*/
+
+  /*------- Margin and Padding CSS Starts -------*/
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+.mr-3 {
+  margin-right: 3px;
+}
+.mr-5 {
+  margin-right: 5px;
+}
+.mt-6 {
+  margin-top: 6px;
+}
+.pb-0 {
+  padding-bottom: 0;
+}
+.pl-3 {
+  padding-left: 3px;
+}
+
+  /*------- Margin and Padding CSS Ends -------*/
+
+  /*------- Form Label and Input CSS Starts -------*/
+
+.form-group-label-input,
+.form-group-input {
+  margin-bottom: 15px;
+}
+.form-label {
+  color: var(--darkGray);
+  font: 1.4rem/1 "Quicksand-Medium";
+  margin-bottom: 1rem;
+}
+.required-field {
+  color: var(--darkRed);
+}
+.form-label-value {
+  color: var(--darkRed);
+  font: 1.4rem/1 "Quicksand-Medium";
+  margin-bottom: 1rem;
+}
+.form-control {
+  color: var(--darkGray);
+  font-family: "Quicksand-Regular";
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  padding: 0.55rem 0.75rem;
+}
+.form-control[type=file] {
+  padding: 0.5rem 0.75rem;
+}
+.form-check {
+  font-size: 1.4rem;
+}
+.form-check-label {
+  color: var(--darkGray);
+  font: 1.4rem/1 "Quicksand-Medium";
+}
+.form-group-label-input > .input-group > .input-group-text > .fa-magnifying-glass {
+  font-size: 1.4rem;
+}
+.form-label-show-records-per-page + .SumoSelect {
+  width: 25%;
+}
+
+  /*------- Form Label and Input CSS Ends -------*/
+
+  /*------- Button CSS Starts -------*/
+
+.btn {
+  color: var(--white);
+  font: 1.4rem/1 "Quicksand-Medium";
+  letter-spacing: 0.5px;
+  padding: 0.9rem 0.75rem;
+}
+.btn-dashboard {
+  background-color: var(--navyTeal);
+}
+.btn-dashboard:first-child:hover,
+.btn-dashboard:first-child:active {
+  background-color: var(--lochmara);
+  border-color: transparent;
+  color: var(--white);
+}
+.btn-save {
+  background-color: var(--navyTeal);
+  color: var(--white);
+}
+.btn-save:first-child:hover,
+.btn-save:first-child:active {
+  background-color: var(--lochmara);
+  border-color: transparent;
+  color: var(--white);
+}
+.btn-clear {
+  background-color: transparent;
+  border: 1px solid var(--navyTeal);
+  color: var(--navyTeal);
+}
+:not(.btn-check) + .btn-clear:hover,
+:not(.btn-check) + .btn-clear:active {
+  background-color: var(--navyTeal);
+  border: 1px solid var(--navyTeal);
+  color: var(--white)
+}
+.btn-delete {
+  background-color: var(--red);
+}
+:not(.btn-check) + .btn-delete:hover,
+:not(.btn-check) + .btn-delete:active {
+  background-color: var(--darkRed);
+  border: 1px solid var(--darkRed);
+  color: var(--white)
+}
+
+  /*------- Button CSS Ends -------*/
+
+  /*------- Card CSS Starts -------*/
+
+.card-dashboard {
+  border: 0;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  border-radius: 14px;
+  -webkit-box-shadow: 0 0 21px 0 rgb(34 87 112 / 10%);
+  -moz-box-shadow: 0 0 21px 0 rgb(34 87 112 / 10%);
+  -ms-box-shadow: 0 0 21px 0 rgb(34 87 112 / 10%);
+  -o-box-shadow: 0 0 21px 0 rgb(34 87 112 / 10%);
+  box-shadow: 0 0 21px 0 rgb(34 87 112 / 10%);
+}
+.card-dashboard > .card-header {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--ghostWhite);
+  -webkit-border-radius: 14px 14px 0 0;
+  -moz-border-radius: 14px 14px 0 0;
+  -ms-border-radius: 14px 14px 0 0;
+  -o-border-radius: 14px 14px 0 0;
+  border-radius: 14px 14px 0 0;
+  color: var(--navyTeal);
+  font: 1.8rem/1 "Quicksand-SemiBold";
+  padding: 10px 15px;
+}
+.card-dashboard > .card-body {
+  padding: 15px;
+}
+.card-table-dashboard > .card-body {
+  padding: 15px;
+}
+.card-dashboard > .card-body > .card-inner-body {
+  padding: 15px;
+}
+.card-dashboard > .card-body > .card-inner-body.border-bottom {
+  border-bottom: 1px solid var(--ghostWhite);
+}
+.card-dashboard .card-footer {
+  background-color: var(--white);
+  border-top: 1px solid var(--ghostWhite);
+  -webkit-border-radius: 0 0 14px 14px;
+  -moz-border-radius: 0 0 14px 14px;
+  -ms-border-radius: 0 0 14px 14px;
+  -o-border-radius: 0 0 14px 14px;
+  border-radius: 0 0 14px 14px;
+  padding: 15px;
+}
+.card-sub-dashboard {
+  border: 1px solid var(--ghostWhite);
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+  border-radius: 14px;
+}
+.card-sub-dashboard > .card-header {
+  background-color: var(--ghostWhite);
+  border-bottom: 1px solid var(--ghostWhite);
+  -webkit-border-radius: 14px 14px 0 0;
+  -moz-border-radius: 14px 14px 0 0;
+  -ms-border-radius: 14px 14px 0 0;
+  -o-border-radius: 14px 14px 0 0;
+  border-radius: 14px 14px 0 0;
+  color: var(--navyTeal);
+  font: 1.6rem/1 "Quicksand-SemiBold";
+  padding: 12px 15px 10px;
+}
+.card-sub-dashboard > .card-body {
+  padding: 15px;
+}
+.card-sub-dashboard > .card-body > .card-inner-body {
+  padding: 15px;
+}
+.card-sub-dashboard > .card-body > .card-inner-body.border-1px {
+  border: 1px solid var(--ghostWhite);
+}
+.card-sub-dashboard .card-footer {
+  background-color: var(--white);
+  border-top: 1px solid var(--ghostWhite);
+  padding: 15px;
+}
+
+  /*------- Card CSS Ends -------*/
+
+/*------- Common CSS Ends -------*/
+
+/*------- Login Page Starts -------*/
+
+  /*------- LogIn Section Starts -------*/
+
+.bg-login {
+  background: url("../images/login-banner-2.jpg") no-repeat center/cover;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+.login-heading > h1 {
+  color: var(--navyTeal);
+  font: 3.6rem/1.5 "Quicksand-Bold";
+  margin-bottom: 30px;
+}
+.box-login-info {
+  background-color: var(--white);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  -ms-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  -o-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  left: 50%;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 35%;
+  z-index: 1;
+}
+.forgot-pwd {
+  line-height: normal;
+}
+.forgot-pwd > a {
+  color: var(--navyTeal);
+  font: 1.6rem/1 "Quicksand-Medium";
+}
+
+  /*------- LogIn Section Ends -------*/
+
+/*------- Login Page Ends -------*/
+
+/*------- Fixed Sidebar Section Starts -------*/
+
+.fixed-sidebar {
+  background-color: var(--white);
+  box-shadow: 0 0 21px 0 rgb(34 87 112 / 10%);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0); 
+  -ms-transform: translateX(0); 
+  -o-transform: translateX(0); 
+  transform: translateX(0); 
+  -webkit-transition: 0.5s linear; 
+  -moz-transition: 0.5s linear; 
+  -ms-transition: 0.5s linear; 
+  -o-transition: 0.5s linear; 
+  transition: 0.5s linear; 
+  width: 250px; 
+  z-index: 10; 
+}
+.fixed-sidebar.active { 
+  -webkit-transform: translateX(-100%); 
+  -moz-transform: translateX(-100%); 
+  -ms-transform: translateX(-100%); 
+  -o-transform: translateX(-100%); 
+  transform: translateX(-100%); 
+}
+.fixed-sidebar-heading > h1 {
+  color: var(--navyTeal); 
+  font: 2.4rem/1.42857143 "Quicksand-SemiBold"; 
+  height: 50px; 
+  line-height: 50px; 
+  text-align: center; 
+  text-transform: uppercase; 
+  width: 100%; 
+}
+.fixed-sidebar-heading > i { 
+  display: none; 
+}
+.sidebar-menu-listing { 
+  height: calc(100% - 50px); 
+  overflow-y: auto; 
+}
+.sidebar-menu-listing > li { 
+  display: block; 
+}
+.sidebar-menu-listing > li > a { 
+  color: var(--darkGray); 
+  display: block; 
+  font: 1.6rem/1.42857143 "Quicksand-Medium"; 
+  padding: 10px 45px; 
+  position: relative;
+}
+.sidebar-menu-listing > li > a > i:first-child { 
+  color: var(--darkGray); 
+  font-size: 1.6rem; 
+  left: 15px; 
+  position: absolute; 
+  top: 50%; 
+  -webkit-transform: translateY(-50%); 
+  -moz-transform: translateY(-50%); 
+  -ms-transform: translateY(-50%); 
+  -o-transform: translateY(-50%); 
+  transform: translateY(-50%); 
+  -webkit-transition: 0.5s linear; 
+  -moz-transition: 0.5s linear; 
+  -ms-transition: 0.5s linear; 
+  -o-transition: 0.5s linear; 
+  transition: 0.5s linear; 
+  z-index: 10; 
+}
+.sidebar-menu-listing > li > a > i:last-child {
+  color: var(--darkGray);
+  font-size: 1.2rem;
+  position: absolute; 
+  right: 15px; 
+  top: 50%; 
+  -webkit-transform: translateY(-50%); 
+  -moz-transform: translateY(-50%); 
+  -ms-transform: translateY(-50%); 
+  -o-transform: translateY(-50%); 
+  transform: translateY(-50%); 
+  -webkit-transition: 0.5s linear; 
+  -moz-transition: 0.5s linear; 
+  -ms-transition: 0.5s linear; 
+  -o-transition: 0.5s linear; 
+  transition: 0.5s linear; 
+  z-index: 10; 
+}
+.sidebar-menu-listing > li > a:hover,
+.sidebar-menu-listing > li.active > a {
+  color: var(--navyTeal); 
+}
+.sidebar-menu-listing > li > a:hover > i,
+.sidebar-menu-listing > li.active > a > i { 
+  color: var(--navyTeal); 
+}
+.sidebar-menu-listing > li.active > a > i:last-child {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  transform-origin: top;
+}
+.sidebar-menu-listing > li > ul {
+  display: none; 
+}
+.sidebar-menu-listing > li.active > a + ul {
+  display: block;
+}
+.sidebar-sub-menu-listing  {
+  background-color: var(--white); 
+  padding: 5px 25px;
+}
+.sidebar-sub-menu-listing > li {
+  margin-bottom: 10px;
+}
+.sidebar-sub-menu-listing > li:last-child {
+  margin-bottom: 0;
+}
+.sidebar-sub-menu-listing > li > a { 
+  color: var(--darkGray); 
+  display: block; 
+  font: 1.4rem/1.2 "Quicksand-Medium"; 
+  padding: 0 0 0 20px; 
+  position: relative;
+  z-index: 1;
+}
+.sidebar-sub-menu-listing > li > a::before {
+  background-color: var(--darkGray);
+  content: "";
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+  width: 10px;
+  z-index: 1;
+}
+.sidebar-sub-menu-listing > li > a:hover {
+  color: var(--navyTeal); 
+}
+.sidebar-sub-menu-listing > li > a:hover::before {
+  border: 1px solid var(--navyTeal);
+}
+
+  /*------- Custom Scrollbar CSS Starts -------*/
+
+.sidebar-menu-listing::-webkit-scrollbar { 
+  width: 7px; 
+}
+.sidebar-menu-listing::-webkit-scrollbar-track { 
+  background-color: var(--navyTeal); 
+}
+.sidebar-menu-listing::-webkit-scrollbar-thumb { 
+  background-color: var(--navyTeal); 
+}
+.sidebar-menu-listing::-webkit-scrollbar-thumb:hover { 
+  background-color: var(--white); 
+}
+
+  /*------- Custom Scrollbar CSS Ends -------*/
+
+/*------- Fixed Sidebar Section Ends -------*/
+
+/*------- Wrapper Section Starts -------*/
+
+.wrapper { 
+  margin: 65px 0 0 250px; 
+  -webkit-transition: 0.5s linear; 
+  -moz-transition: 0.5s linear; 
+  -ms-transition: 0.5s linear; 
+  -o-transition: 0.5s linear; 
+  transition: 0.5s linear; 
+}
+.wrapper.active { 
+  margin: 65px 0 0 0; 
+}
+.bg-header-desktop { 
+  background-color: var(--white);
+  box-shadow: 0 0 21px 0 rgb(34 87 112 / 10%);
+  margin-bottom: 15px; 
+  left: 0; 
+  padding: 0 15px 0 250px; 
+  position: fixed; 
+  top: 0; 
+  -webkit-transition: 0.5s linear; 
+  -moz-transition: 0.5s linear; 
+  -ms-transition: 0.5s linear; 
+  -o-transition: 0.5s linear; 
+  transition: 0.5s linear; 
+  width: 100%; 
+  z-index: 9; 
+}
+.bg-header-desktop.active { 
+  padding: 0 15px; 
+}
+
+/*------- Wrapper Section Ends -------*/
+
+/*------- Hamburger Menu CSS Starts -------*/
+
+.burger-menu { 
+  background: var(--white); 
+  cursor: pointer; 
+  height: 50px; 
+  position: relative; 
+  width: 50px; 
+  z-index: 10; 
+}
+.burger-menu > span { 
+  background-color: var(--navyTeal); 
+  height: 2px; 
+  left: 50%; 
+  position: absolute; 
+  top: 50%; 
+  -webkit-transform: translate(-50%,-50%) rotate(0deg); 
+  -moz-transform: translate(-50%,-50%) rotate(0deg); 
+  -ms-transform: translate(-50%,-50%) rotate(0deg); 
+  -o-transform: translate(-50%,-50%) rotate(0deg); 
+  transform: translate(-50%,-50%) rotate(0deg); 
+  -webkit-transition: 0.5s linear; 
+  -moz-transition: 0.5s linear; 
+  -ms-transition: 0.5s linear; 
+  -o-transition: 0.5s linear; 
+  transition: 0.5s linear; 
+  width: 25px; }
+.burger-menu > span::before,
+.burger-menu > span::after { 
+  background-color: var(--navyTeal); 
+  content: ""; 
+  display: block; 
+  height: 2px; 
+  position: absolute; 
+  top: -10px; 
+  width: 25px; 
+}
+.burger-menu > span::after { 
+  display: block; 
+  top: 10px; 
+}
+.burger-menu.active > span { 
+  -webkit-transform: translate(-50%,-50%) rotate(90deg); 
+  -moz-transform: translate(-50%,-50%) rotate(90deg); 
+  -ms-transform: translate(-50%,-50%) rotate(90deg); 
+  -o-transform: translate(-50%,-50%) rotate(90deg); 
+  transform: translate(-50%,-50%) rotate(90deg); 
+}
+
+/*------- Hamburger Menu CSS Ends -------*/
+
+/*------- Header Section Starts -------*/
+
+.admin-panel { 
+  color: var(--navyTeal);
+  font: 2.4rem/1 "Quicksand-SemiBold"; 
+  text-align: center; 
+  text-transform: uppercase; 
+}
+.header-menu-listing > li { 
+  margin-right: 20px; 
+  position: relative; 
+  z-index: 10; }
+.header-menu-listing > li:last-child { 
+  margin-right: 0; 
+}
+.header-menu-listing > li > a { 
+  color: var(--navyTeal);
+  font-size: 1.8rem; 
+}
+.header-menu-listing > li > a:hover,
+.header-menu-listing > li.active > a { 
+  color: var(--black); 
+}
+.header-menu-listing-dropdown { 
+  background-color: var(--navyTeal); 
+  display: none; 
+  min-width: 100px; 
+  position: absolute; 
+  right: 0; 
+  top: 37px; 
+  z-index: 10; 
+}
+.header-menu-listing-dropdown > li > a { 
+  color: var(--white); 
+  display: block; 
+  font: 1.4rem/1.42857143 "Quicksand-Light"; 
+  padding: 5px 10px; 
+  text-align: center; 
+}
+.header-menu-listing-dropdown > li > a:hover { 
+  background-color: var(--white); 
+  color: var(--black); 
+}	
+.header-sub-menu-listing { 
+  background-color: var(--navyTeal); 
+  position: absolute; 
+  right: 0; 
+  top: 37px; 
+  min-width: 140px; 
+  z-index: 10; 
+}
+.header-sub-menu-listing > li { 
+  display: block; 
+}
+.header-sub-menu-listing > li > a { 
+  border-bottom: 4px solid var(--white); 
+  color: var(--white); 
+  display: block; 
+  font: 1.4rem/1.2 "Quicksand-Light"; 
+  padding: 10px 20px; 
+  text-transform: uppercase; 
+}
+.header-sub-menu-listing > li > a > i { 
+  margin-right: 5px; }
+.header-menu-listing > li > a > span { 
+  background-color: var(--yellow); 
+  -webkit-border-radius: 50%; 
+  -moz-border-radius: 50%; 
+  -ms-border-radius: 50%; 
+  -o-border-radius: 50%; 
+  border-radius: 50%; 
+  color: var(--white); 
+  font: 1.2rem/1.2 "Quicksand-Regular"; 
+  height: 20px; 
+  left: 100%; 
+  line-height: 20px; 
+  position: absolute; 
+  text-align: center; 
+  top: 10%; 
+  -webkit-transform: translate(-50%,-50%); 
+  -moz-transform: translate(-50%,-50%); 
+  -ms-transform: translate(-50%,-50%); 
+  -o-transform: translate(-50%,-50%); 
+  transform: translate(-50%,-50%); 
+  width: 20px; 
+  z-index: 1; }
+.header-menu-listing > li:nth-child(2) > a > span { 
+  background-color: var(--darkBlue); 
+}
+.header-sub-menu-listing > li > a:hover { 
+  background-color: var(--lochmara); 
+  color: var(--white); 
+}
+
+/*------- Header Section Ends -------*/
+
+/*------- Table Design CSS Section Starts -------*/
+
+.table-responsive-dashboard {
+  border: 0;
+  position: relative;
+}
+table.table-dashboard {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+.table-dashboard > thead > tr > th,
+.table-dashboard > tbody > tr > td {
+  padding: 10px;
+}
+.table-dashboard > thead > tr > th {
+  color: var(--black);
+  font: 1.4rem/1 "Quicksand-SemiBold";
+}
+.table-dashboard > tbody > tr > td {
+  color: var(--black);
+  font: 1.4rem/1 "Quicksand-Medium";
+}
+.table-dashboard > tbody > tr > td > i.edit-icon {
+  color: var(--green);
+}
+.table-dashboard > tbody > tr > td > i.delete-icon {
+  color: var(--red);
+}
+.table-records > p {
+  color: #000000;
+  font-family: "Quicksand-Medium";
+  font-size: 1.4rem;
+}
+.table-records > p > span {
+  font-family: "Quicksand-SemiBold";
+}
+.table-records,
+.table-pagination {
+  margin-top: 15px;
+}
+.table-pagination > li > a {
+  color: #000000;
+  font-family: "Quicksand-Medium";
+  font-size: 1.4rem;
+  padding: 5px 10px;
+}
+
+/*------- Table Design CSS Section Ends -------*/
+
+/*------- SumoSelect CSS Starts -------*/
+
+.SumoSelect {
+  display: block;
+  width: 100%;
+}
+.SumoSelect > .CaptionCont {
+  border: 1px solid var(--gray);
+  -webkit-border-radius: .375rem;
+  -moz-border-radius: .375rem;
+  -ms-border-radius: .375rem;
+  -o-border-radius: .375rem;
+  border-radius: .375rem;
+}
+.SumoSelect.open > .CaptionCont,
+.SumoSelect:focus > .CaptionCont,
+.SumoSelect:hover > .CaptionCont {
+  border-color: var(--gray);
+  box-shadow: none;
+}
+.SumoSelect > .optWrapper {
+  border: 1px solid var(--gray);
+}
+.SumoSelect.open > .optWrapper {
+  top: 32px;
+}
+.SumoSelect > .optWrapper > .options li label {
+  font: 1.4rem/normal "Quicksand-Regular";
+}
+.SumoSelect > .optWrapper > .options li.opt {
+  padding: 8px 6px;
+}
+.SumoSelect > .CaptionCont > span.placeholder {
+  background-color: var(--white);
+  color: transparent;
+  font: 1.6rem/1.5 "Quicksand-Regular";
+  opacity: 1;
+}
+.SumoSelect .select-all {
+  height: auto;
+}
+.SumoSelect .select-all,
+.SumoSelect .reset-all {
+  padding: 9px 0 6px 35px;
+}
+.SumoSelect .select-all > label,
+.SumoSelect .reset-all > label {
+  font: 1.4rem/1 "Quicksand-Regular";
+}
+.SumoSelect[is-selected=true] .reset-all {
+  color: var(--navyTeal);
+}
+.SumoSelect[is-selected=true] .reset-all:hover {
+  background-color: var(--lightGray);
+}
+
+/*------- SumoSelect CSS Ends -------*/
+
+/*------- Customer Details Page Starts -------*/
+
+.add-contact-details {
+  margin-top: 21px;
+}
+.cancel-contact-details {
+  color: var(--red);
+  font-size: 3.6rem;
+  margin-top: 21px;
+}
+
+/*------- Customer Details Page Ends -------*/
+
+/*------- Custom DataTables CSS Starts -------*/
+
+.dataTables_length {
+  padding: 10px 0 15px;
+}
+.dataTables_length > label,
+.dataTables_filter > label {
+  color: #000000;
+  font: 1.6rem/1 "Quicksand-Medium";
+  text-transform: capitalize;
+}
+.dataTables_filter {
+  position: absolute;
+  right: 0;
+  top: 11px;
+}
+.dataTables_filter > label > input {
+  border: 1px solid var(--gray);
+  -webkit-border-radius: .375rem;
+  -moz-border-radius: .375rem;
+  -ms-border-radius: .375rem;
+  -o-border-radius: .375rem;
+  border-radius: .375rem;
+  color: var(--darkGray);
+  font-family: "Quicksand-Regular";
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+  padding: 0.5rem 0.75rem;
+}
+.dataTables_filter > label > input:focus {
+  outline: 0;
+}
+.dataTables_info {
+  color: #000000;
+  font: 1.6rem/1 "Quicksand-Medium";
+  padding-left: 10px;
+  text-transform: capitalize;
+}
+div.dataTables_wrapper div.dataTables_info {
+  padding: 25px 0 15px;
+}
+.dataTables_paginate {
+  border: 1px solid var(--gray);
+  -webkit-border-radius: .375rem;
+  -moz-border-radius: .375rem;
+  -ms-border-radius: .375rem;
+  -o-border-radius: .375rem;
+  border-radius: .375rem;
+  bottom: 8px;
+  position: absolute;
+  right: 0;
+}
+.dataTables_paginate > a {
+  background-color: var(--blue);
+  -webkit-border-radius: .375rem;
+  -moz-border-radius: .375rem;
+  -ms-border-radius: .375rem;
+  -o-border-radius: .375rem;
+  border-radius: .375rem;
+  color: var(--white);
+  cursor: pointer;
+  display: inline-block;
+  font: 1.6rem/1 "Quicksand-Medium";
+  padding: 7px 10px;
+}
+.dataTables_paginate > a:first-child {
+  border-radius: .375rem 0 0 .375rem;
+  -webkit-border-radius: .375rem 0 0 .375rem;
+  -moz-border-radius: .375rem 0 0 .375rem;
+  -ms-border-radius: .375rem 0 0 .375rem;
+  -o-border-radius: .375rem 0 0 .375rem;
+}
+.dataTables_paginate > a:last-child {
+  border-radius: 0 .375rem .375rem 0;
+  -webkit-border-radius: 0 .375rem .375rem 0;
+  -moz-border-radius: 0 .375rem .375rem 0;
+  -ms-border-radius: 0 .375rem .375rem 0;
+  -o-border-radius: 0 .375rem .375rem 0;
+}
+.dataTables_paginate > a.disabled {
+  background-color: #cccccc;
+  color: #000000;
+  opacity: 0.5;
+}
+.dataTables_paginate > span {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.dataTables_paginate > span > a {
+  border-left: 1px solid var(--gray);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  color: var(--darkGray);
+  cursor: pointer;
+  font: 1.6rem/1 "Quicksand-Medium";
+  padding: 7px 10px;
+}
+.dataTables_paginate > span > a.current,
+.dataTables_paginate > span > a:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+/*------- Custom DataTables CSS Ends -------*/

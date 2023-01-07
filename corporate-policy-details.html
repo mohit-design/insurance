@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>Corporate Policy Details :: Insurance</title>
+  <!-- Favicon Icon -->
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" href="css/all.min.css" type="text/css" />
+	<!-- Bootstrap-5 Minified CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<!-- SumoSelect Minified CSS -->
+	<link rel="stylesheet" href="css/sumoselect.min.css" type="text/css" />
+	<!-- Style CSS -->
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+	<!-- Media CSS -->
+	<link rel="stylesheet" href="css/media.css" type="text/css" />
+</head>
+<body>
+  <!-- Fixed Sidebar Menu Section Starts -->
+	<div class="fixed-sidebar">
+		<div class="fixed-sidebar-heading">
+			<h1>Dashboard</h1>
+			<i class="fas fa-times-circle"></i>		
+		</div>
+		<ul class="sidebar-menu-listing">
+			<li><a href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+			</li>
+			<li>
+				<a href="#"><i class="fas fa-users"></i> Users <i class="fas fa-chevron-right"></i></a>
+				<ul class="sidebar-sub-menu-listing">
+					<li><a href="user-lists.html">User Lists</a></li>
+					<li><a href="user-details.html">User Details</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#"><i class="fa-solid fa-person-military-pointing"></i> Customers <i class="fas fa-chevron-right"></i></a>
+				<ul class="sidebar-sub-menu-listing">
+					<li><a href="customer-lists.html">Customer Lists</a></li>
+					<li><a href="customer-details.html">Customer Details</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#"><i class="fa-solid fa-person"></i> Leads <i class="fas fa-chevron-right"></i></a>
+				<ul class="sidebar-sub-menu-listing">
+					<li><a href="lead-lists.html">Lead Lists</a></li>
+					<li><a href="lead-policy-details.html">Lead Details</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#"><i class="fa-solid fa-user-nurse"></i> Retail Health Policy <i class="fas fa-chevron-right"></i></a>
+				<ul class="sidebar-sub-menu-listing">
+					<li><a href="retail-health-policy-lists.html">Retail Health Policy Lists</a></li>
+					<li><a href="retail-health-policy-details.html">Retail Health Policy Details</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#"><i class="fa-regular fa-life-ring"></i> Retail Life Policy <i class="fas fa-chevron-right"></i></a>
+				<ul class="sidebar-sub-menu-listing">
+					<li><a href="retail-life-policy-lists.html">Retail Life Policy Lists</a></li>
+					<li><a href="retail-life-policy-details.html">Retail Life Policy Details</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#"><i class="fa-solid fa-motorcycle"></i> Motor Policy <i class="fas fa-chevron-right"></i></a>
+				<ul class="sidebar-sub-menu-listing">
+					<li><a href="motor-policy-lists.html">Motor Policy Lists</a></li>
+					<li><a href="motor-policy-details.html">Motor Policy Details</a></li>
+				</ul>
+			</li>
+			<li class="active">
+				<a href="#"><i class="fa-sharp fa-solid fa-chalkboard-user"></i> Corporate Policy <i class="fas fa-chevron-right"></i></a>
+				<ul class="sidebar-sub-menu-listing">
+					<li><a href="corporate-policy-lists.html">Corporate Policy Lists</a></li>
+					<li><a href="corporate-policy-details.html">Corporate Policy Details</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- Fixed Sidebar Menu Section Ends -->
+	<!-- Wrapper Section Starts -->
+	<div class="wrapper">
+		<!-- Header Section Starts -->
+		<div class="container-fluid bg-header-desktop">
+			<div class="row d-flex align-items-center">
+				<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+					<div class="burger-menu">
+						<span></span>
+					</div>
+				</div>
+				<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+					<p class="admin-panel">Insurance</p>
+				</div>
+				<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+					<ul class="header-menu-listing d-flex align-items-center justify-content-end">
+						<li>
+							<a href="#">
+								<i class="fas fa-envelope"></i>
+								<span>2</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fas fa-bell"></i>
+								<span>7</span>
+							</a>
+						</li>
+						<li>
+							<a href="" class="profile"><img src="images/profile.svg" class="img-responsive" alt="" /></a>
+							<ul class="header-sub-menu-listing">
+								<li><a href=""><i class="fas fa-user"></i> Profile</a></li>
+								<li><a href=""><i class="fas fa-envelope"></i> Inbox</a></li>
+								<li><a href="signin.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Header Section Ends -->
+		<!-- Add New Users Section Starts -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="card card-dashboard mb-15">
+						<div class="card-header">Corporate Policy Details</div>
+						<div class="card-body pb-0">
+							<div class="row">
+								<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+									<div class="form-group-label-input">
+										<label class="form-label">Title:</label>
+										<select class="form-control sumoselect search">
+											<option value="">Select</option>
+											<option value="">Title 1</option>
+											<option value="">Title 2</option>
+											<option value="">Title 3</option>
+											<option value="">Title 4</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+									<div class="form-group-label-input">
+										<label class="form-label">Booking Number:</label>
+										<input type="text" class="form-control" id="bookingNumber" placeholder="Enter Booking Number" name="booking-number" />
+									</div>
+								</div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+									<div class="form-group-label-input">
+										<label class="form-label">Customer Code:</label>
+										<input type="text" class="form-control" id="customerCode" placeholder="Enter Customer Code" name="customer-code" />
+									</div>
+								</div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+									<div class="form-group-label-input">
+										<label class="form-label">Insured Name:</label>
+										<input type="text" class="form-control" id="insuredName" placeholder="Enter Insured Name" name="insured-name" />
+									</div>
+								</div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+									<div class="form-group-label-input">
+										<label class="form-label">Co-Insurance:</label>
+										<select class="form-control sumoselect search">
+											<option value="">Select</option>
+											<option value="">Yes</option>
+											<option value="">No</option>
+										</select>
+									</div>
+								</div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+									<div class="form-group-label-input">
+										<label class="form-label">Leader Insurer Name:</label>
+										<select class="form-control sumoselect search">
+											<option value="">Select</option>
+											<option value="">Leader Insurer Name - 1</option>
+											<option value="">Leader Insurer Name - 2</option>
+										</select>
+									</div>
+								</div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+									<div class="form-group-label-input">
+										<label class="form-label">Leader Insurer City:</label>
+										<select class="form-control sumoselect search">
+											<option value="">Select</option>
+											<option value="">Leader Insurer City - 1</option>
+											<option value="">Leader Insurer City - 2</option>
+										</select>
+									</div>
+								</div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+									<div class="form-group-label-input">
+										<label class="form-label">Leader Insurer Branch:</label>
+										<select class="form-control sumoselect search">
+											<option value="">Select</option>
+											<option value="">Leader Insurer Branch - 1</option>
+											<option value="">Leader Insurer Branch - 2</option>
+										</select>
+									</div>
+								</div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+									<div class="form-group-label-input">
+										<label class="form-label">Leader Insurer Share:</label>
+										<select class="form-control sumoselect search">
+											<option value="">Select</option>
+											<option value="">Leader Insurer Share - 1</option>
+											<option value="">Leader Insurer Share - 2</option>
+										</select>
+									</div>
+								</div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+									<div class="form-group-label-input">
+										<label class="form-label">Policy Number:</label>
+										<select class="form-control sumoselect search">
+											<option value="">Select</option>
+											<option value="">Yes</option>
+											<option value="">No</option>
+										</select>
+									</div>
+								</div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+									<div class="form-group-label-input">
+										<label class="form-label">Policy Number Entry:</label>
+										<input type="text" class="form-control" id="policyNumberEntry" placeholder="Enter Policy Number Entry" name="policy-number-entry" />
+									</div>
+								</div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+									<div class="form-group-label-input">
+										<label class="form-label">Co-Broking:</label>
+										<select class="form-control sumoselect search">
+											<option value="">Select</option>
+											<option value="">Yes</option>
+											<option value="">No</option>
+										</select>
+									</div>
+								</div>
+              </div>
+              <div class="card card-sub-dashboard mb-15">
+								<div class="card-header">Co-Broker</div>
+								<div class="card-body pb-0">
+									<div class="row align-items-end">
+                    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                      <div class="row">
+                        <div class="col">
+													<div class="form-group-label-input">
+														<label class="form-label">Co-Broker Name:</label>
+														<input type="text" class="form-control" id="coBrokerName" placeholder="Enter Name" name="co-broker-name" />
+													</div>
+                        </div>
+                        <div class="col">
+                          <div class="form-group-label-input">
+														<label class="form-label">Co-Broker City:</label>
+														<input type="text" class="form-control" id="coBrokerCity" placeholder="Enter City" name="co-broker-city" />
+													</div>
+                        </div>
+                        <div class="col">
+                          <div class="form-group-label-input">
+														<label class="form-label">Co-Broker Share:</label>
+														<input type="text" class="form-control" id="coBrokerShare" placeholder="Enter Share" name="co-broker-share" />
+													</div>
+                        </div>
+                        <div class="col">
+                          <div class="form-group-label-input">
+														<label class="form-label">Brokerage Paid:</label>
+														<select class="form-control sumoselect search">
+															<option value="">Brokerage Paid</option>
+															<option value="">Brokerage Paid - 1</option>
+															<option value="">Brokerage Paid - 2</option>
+														</select>
+													</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                      <div class="form-group-input">
+												<button type="button" class="btn btn-save">Add</button>
+											</div>
+                    </div>
+									</div>
+                  <div class="row align-items-end">
+                    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                      <div class="row">
+                        <div class="col">
+													<div class="form-group-label-input">
+														<label class="form-label">Co-Broker Name:</label>
+														<input type="text" class="form-control" id="coBrokerName" placeholder="Enter Name" name="co-broker-name" />
+													</div>
+                        </div>
+                        <div class="col">
+                          <div class="form-group-label-input">
+														<label class="form-label">Co-Broker City:</label>
+														<input type="text" class="form-control" id="coBrokerCity" placeholder="Enter City" name="co-broker-city" />
+													</div>
+                        </div>
+                        <div class="col">
+                          <div class="form-group-label-input">
+														<label class="form-label">Co-Broker Share:</label>
+														<input type="text" class="form-control" id="coBrokerShare" placeholder="Enter Share" name="co-broker-share">
+													</div>
+                        </div>
+                        <div class="col">
+                          <div class="form-group-label-input">
+														<label class="form-label">Brokerage Paid:</label>
+														<select class="form-control sumoselect search">
+															<option value="">Brokerage Paid</option>
+															<option value="">Brokerage Paid - 1</option>
+															<option value="">Brokerage Paid - 2</option>
+														</select>
+													</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                      <div class="form-group-input">
+												<button type="button" class="btn btn-save mr-3">Add</button>
+												<button type="button" class="btn btn-delete">Delete</button>
+											</div>
+                    </div>
+									</div>
+									<div class="card-inner-body border-1px mb-15 pb-0">
+										<div class="row">
+											<div class="col">
+												<div class="form-group-label-input">
+													<label class="form-label">Our Broker Share:</label>
+													<input type="text" class="form-control" id="ourBrokerShare" placeholder="Enter Our Broker Share" name="our-broker-share">
+												</div>
+											</div>
+											<div class="col">
+												<div class="form-group-label-input">
+													<label class="form-label">Our Brokerage to be paid by:</label>
+													<input type="text" class="form-control" id="ourBrokeragTobePaidby" placeholder="Enter Our Brokerage to be paid by" name="our-brokerage-tobe-paid-by" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card card-sub-dashboard mb-15">
+								<div class="card-header">Co-Insurer</div>
+								<div class="card-body pb-0">
+									<div class="row align-items-end">
+                    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                      <div class="row">
+                        <div class="col">
+													<div class="form-group-label-input">
+														<label class="form-label">Co-Insurer Name:</label>
+														<select class="form-control sumoselect search">
+															<option value="">Co-Insurer Name</option>
+															<option value="">Co-Insurer Name - 1</option>
+															<option value="">Co-Insurer Name - 2</option>
+															<option value="">Co-Insurer Name - 3</option>
+															<option value="">Co-Insurer Name - 4</option>
+														</select>
+													</div>
+                        </div>
+                        <div class="col">
+                          <div class="form-group-label-input">
+														<label class="form-label">Co-Insurer City:</label>
+														<select class="form-control sumoselect search">
+															<option value="">Co-Insurer City</option>
+															<option value="">Co-Insurer City - 1</option>
+															<option value="">Co-Insurer City - 2</option>
+															<option value="">Co-Insurer City - 3</option>
+															<option value="">Co-Insurer City - 4</option>
+														</select>
+													</div>
+                        </div>
+                        <div class="col">
+                          <div class="form-group-label-input">
+														<label class="form-label">Co-Insurer Share:</label>
+														<input type="text" class="form-control" id="coInsurerShare" placeholder="Enter Co-Insurer Share" name="co-nsurer-share" />
+													</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                      <div class="form-group-input">
+												<button type="button" class="btn btn-save">Add</button>
+											</div>
+                    </div>
+									</div>
+                  <div class="row align-items-end">
+                    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                      <div class="row">
+                        <div class="col">
+													<div class="form-group-label-input">
+														<label class="form-label">Co-Insurer Name:</label>
+														<select class="form-control sumoselect search">
+															<option value="">Co-Insurer Name</option>
+															<option value="">Co-Insurer Name - 1</option>
+															<option value="">Co-Insurer Name - 2</option>
+															<option value="">Co-Insurer Name - 3</option>
+															<option value="">Co-Insurer Name - 4</option>
+														</select>
+													</div>
+                        </div>
+                        <div class="col">
+                          <div class="form-group-label-input">
+														<label class="form-label">Co-Insurer City:</label>
+														<select class="form-control sumoselect search">
+															<option value="">Co-Insurer City</option>
+															<option value="">Co-Insurer City - 1</option>
+															<option value="">Co-Insurer City - 2</option>
+															<option value="">Co-Insurer City - 3</option>
+															<option value="">Co-Insurer City - 4</option>
+														</select>
+													</div>
+                        </div>
+                        <div class="col">
+                          <div class="form-group-label-input">
+														<label class="form-label">Co-Insurer Share:</label>
+														<input type="text" class="form-control" id="coInsurerShare" placeholder="Enter Co-Insurer Share" name="co-nsurer-share" />
+													</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                      <div class="form-group-input">
+												<button type="button" class="btn btn-save mr-3">Add</button>
+												<button type="button" class="btn btn-delete">Delete</button>
+											</div>
+                    </div>
+									</div>
+									<div class="card-inner-body border-1px mb-15 pb-0">
+										<div class="row">
+											<div class="col-3 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+												<div class="form-group-label-input">
+													<label class="form-label">Brokerage Paid:</label>
+													<select class="form-control sumoselect search">
+														<option value="">Select</option>
+														<option value="">Brokerage Paid by - 1</option>
+														<option value="">Brokerage Paid by - 2</option>
+														<option value="">Brokerage Paid by - 3</option>
+														<option value="">Brokerage Paid by - 4</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-3 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+												<div class="form-group-label-input">
+													<label class="form-label">Start Date:</label>
+													<input type="text" class="form-control" id="coInsurerStartDate" placeholder="Enter Start Date" name="co-insurer-start-date" />
+												</div>
+											</div>
+											<div class="col-3 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+												<div class="form-group-label-input">
+													<label class="form-label">Days:</label>
+													<input type="text" class="form-control" id="coInsurerDays" placeholder="Enter Days" name="co-insurer-days" />
+												</div>
+											</div>
+											<div class="col-3 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+												<div class="form-group-label-input">
+													<label class="form-label">End Date:</label>
+													<input type="text" class="form-control" id="coInsurerEndDate" placeholder="Enter End Date" name="co-insurer-end-date" />
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-3 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+												<div class="form-group-label-input">
+													<label class="form-label">Is Renewable?:</label>
+													<select class="form-control sumoselect search">
+														<option value="">Select</option>
+														<option value="">Yes</option>
+														<option value="">No</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-3 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+												<div class="form-group-label-input">
+													<label class="form-label">Policy Department:</label>
+													<select class="form-control sumoselect search">
+														<option value="">Select</option>
+														<option value="">Policy Department - 1</option>
+														<option value="">Policy Department - 2</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-3 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+												<div class="form-group-label-input">
+													<label class="form-label">Policy Name:</label>
+													<select class="form-control sumoselect search">
+														<option value="">Select</option>
+														<option value="">Policy Name - 1</option>
+														<option value="">Policy Name - 2</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card card-sub-dashboard mb-15">
+								<div class="card-header">Addon Cover / Extention</div>
+								<div class="card-body pb-0">
+									<div class="row align-items-end">
+                    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+													<div class="form-group-label-input">
+														<label class="form-label">Coverage:</label>
+														<select class="form-control sumoselect search">
+															<option value="">Coverage</option>
+															<option value="">Coverage - 1</option>
+															<option value="">Coverage - 2</option>
+															<option value="">Coverage - 3</option>
+															<option value="">Coverage - 4</option>
+														</select>
+													</div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                          <div class="form-group-label-input">
+														<label class="form-label">Addon Cover / Extention:</label>
+														<select class="form-control sumoselect search">
+															<option value="">Addon Cover / Extention</option>
+															<option value="">Addon Cover / Extention - 1</option>
+															<option value="">Addon Cover / Extention - 2</option>
+															<option value="">Addon Cover / Extention - 3</option>
+															<option value="">Addon Cover / Extention - 4</option>
+														</select>
+													</div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                          <div class="form-group-label-input">
+														<label class="form-label">Addon Cover / Extention SI:</label>
+														<input type="text" class="form-control" id="addonCoverExtentionSI" placeholder="Enter Addon Cover / Extention SI" name="addon-cover-extention-SI" />
+													</div>
+                        </div>
+												<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                          <div class="form-group-label-input">
+														<label class="form-label">Addon Cover / Extention Premium:</label>
+														<input type="text" class="form-control" id="addonCoverExtentioPremium" placeholder="Enter Addon Cover / Extention Premium" name="addon-cover-extention-premium" />
+													</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                      <div class="form-group-input">
+												<button type="button" class="btn btn-save mr-3">Add</button>
+											</div>
+                    </div>
+									</div>
+									<div class="row align-items-end">
+                    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+													<div class="form-group-label-input">
+														<label class="form-label">Coverage:</label>
+														<select class="form-control sumoselect search">
+															<option value="">Coverage</option>
+															<option value="">Coverage - 1</option>
+															<option value="">Coverage - 2</option>
+															<option value="">Coverage - 3</option>
+															<option value="">Coverage - 4</option>
+														</select>
+													</div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                          <div class="form-group-label-input">
+														<label class="form-label">Addon Cover / Extention:</label>
+														<select class="form-control sumoselect search">
+															<option value="">Addon Cover / Extention</option>
+															<option value="">Addon Cover / Extention - 1</option>
+															<option value="">Addon Cover / Extention - 2</option>
+															<option value="">Addon Cover / Extention - 3</option>
+															<option value="">Addon Cover / Extention - 4</option>
+														</select>
+													</div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                          <div class="form-group-label-input">
+														<label class="form-label">Addon Cover / Extention SI:</label>
+														<input type="text" class="form-control" id="addonCoverExtentionSI" placeholder="Enter Addon Cover / Extention SI" name="addon-cover-extention-SI" />
+													</div>
+                        </div>
+												<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                          <div class="form-group-label-input">
+														<label class="form-label">Addon Cover / Extention Premium:</label>
+														<input type="text" class="form-control" id="addonCoverExtentioPremium" placeholder="Enter Addon Cover / Extention Premium" name="addon-cover-extention-premium" />
+													</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                      <div class="form-group-input">
+												<button type="button" class="btn btn-save mr-3">Add</button>
+												<button type="button" class="btn btn-delete">Delete</button>
+											</div>
+                    </div>
+									</div>
+									<div class="card-inner-body border-1px mb-15 pb-0">
+										<div class="row">
+											<div class="col-3 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+												<div class="form-group-label-input">
+													<label class="form-label">Terrorism SI:</label>
+													<input type="text" class="form-control" id="terrorism-SI" placeholder="Enter Terrorism SI" name="terrorism-SI" />
+												</div>
+											</div>
+											<div class="col-3 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+												<div class="form-group-label-input">
+													<label class="form-label">Terrorism Premium:</label>
+													<input type="text" class="form-control" id="terrorismPremium" placeholder="Enter Terrorism Premium" name="terrorism-premium" />
+												</div>
+											</div>
+											<div class="col-3 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+												<div class="form-group-label-input">
+													<label class="form-label">TP Premium:</label>
+													<input type="text" class="form-control" id="TPPremium" placeholder="Enter TP Premium" name="tp-premium" />
+												</div>
+											</div>
+											<div class="col-3 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+												<div class="form-group-label-input">
+													<label class="form-label">Policy SI:</label>
+													<input type="text" class="form-control" id="policy-SI" placeholder="Enter Policy SI" name="policy-SI" />
+												</div>
+											</div>
+											<div class="col-3 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+												<div class="form-group-label-input">
+													<label class="form-label">Policy Brokerage:</label>
+													<input type="text" class="form-control" id="policyBrokerage" placeholder="Enter Policy Brokerage" name="policy-brokerage" />
+												</div>
+											</div>
+											<div class="col-3 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+												<div class="form-group-label-input">
+													<label class="form-label">Gross Premium amount:</label>
+													<input type="text" class="form-control" id="grossPremiumAmount" placeholder="Enter Gross Premium amount" name="gross-premium-amount" />
+												</div>
+											</div>
+											<div class="col-3 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+												<div class="form-group-label-input">
+													<label class="form-label">GST Amount:</label>
+													<input type="text" class="form-control" id="gstAmount" placeholder="Enter GST Amount" name="gst-amount" />
+												</div>
+											</div>
+											<div class="col-3 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+												<div class="form-group-label-input">
+													<label class="form-label">Net Premium amount including GST:</label>
+													<select class="form-control sumoselect search">
+														<option value="">Select</option>
+														<option value="">Net Premium amount including GST - 1</option>
+														<option value="">Net Premium amount including GST - 2</option>
+														<option value="">Net Premium amount including GST - 3</option>
+														<option value="">Net Premium amount including GST - 4</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card card-sub-dashboard mb-15">
+								<div class="card-header">Payment Details</div>
+								<div class="card-body pb-0">
+									<div class="row align-items-end">
+                    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                      <div class="row">
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+													<div class="form-group-label-input">
+														<label class="form-label">Mode of Payment:</label>
+														<select class="form-control sumoselect search">
+															<option value="">Mode of Payment</option>
+															<option value="">Mode of Payment - 1</option>
+															<option value="">Mode of Payment - 2</option>
+															<option value="">Mode of Payment - 3</option>
+															<option value="">Mode of Payment - 4</option>
+														</select>
+													</div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                          <div class="form-group-label-input">
+														<label class="form-label">Payment Amount:</label>
+														<input type="text" class="form-control" id="paymentAmount" placeholder="Enter Payment Amount" name="payment-amount" />
+													</div>
+                        </div>
+												<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                          <div class="form-group-label-input">
+														<label class="form-label">Transaction Number:</label>
+														<input type="text" class="form-control" id="transactionNumber" placeholder="Enter Transaction Number" name="transaction-number" />
+													</div>
+                        </div>
+												<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+													<div class="form-group-label-input">
+														<label class="form-label">Bank Name:</label>
+														<select class="form-control sumoselect search">
+															<option value="">Bank Name</option>
+															<option value="">Bank Name - 1</option>
+															<option value="">Bank Name - 2</option>
+															<option value="">Bank Name - 3</option>
+															<option value="">Bank Name - 4</option>
+														</select>
+													</div>
+                        </div>
+												<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+													<div class="form-group-label-input">
+														<label class="form-label">Payment Date:</label>
+														<select class="form-control sumoselect search">
+															<option value="">Payment Date</option>
+															<option value="">Payment Date - 1</option>
+															<option value="">Payment Date - 2</option>
+															<option value="">Payment Date - 3</option>
+															<option value="">Payment Date - 4</option>
+														</select>
+													</div>
+                        </div>
+												<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                          <div class="form-group-label-input">
+														<label class="form-label">Payment Remarks:</label>
+														<input type="text" class="form-control" id="paymentRemarks" placeholder="Enter Payment Remarks" name="payment-remarks" />
+													</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                      <div class="form-group-input">
+												<button type="button" class="btn btn-save">Add</button>
+											</div>
+                    </div>
+									</div>
+									<div class="row align-items-end">
+                    <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+											<div class="row">
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+													<div class="form-group-label-input">
+														<label class="form-label">Mode of Payment:</label>
+														<select class="form-control sumoselect search">
+															<option value="">Mode of Payment</option>
+															<option value="">Mode of Payment - 1</option>
+															<option value="">Mode of Payment - 2</option>
+															<option value="">Mode of Payment - 3</option>
+															<option value="">Mode of Payment - 4</option>
+														</select>
+													</div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                          <div class="form-group-label-input">
+														<label class="form-label">Payment Amount:</label>
+														<input type="text" class="form-control" id="paymentAmount" placeholder="Enter Payment Amount" name="payment-amount" />
+													</div>
+                        </div>
+												<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                          <div class="form-group-label-input">
+														<label class="form-label">Transaction Number:</label>
+														<input type="text" class="form-control" id="transactionNumber" placeholder="Enter Transaction Number" name="transaction-number" />
+													</div>
+                        </div>
+												<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+													<div class="form-group-label-input">
+														<label class="form-label">Bank Name:</label>
+														<select class="form-control sumoselect search">
+															<option value="">Bank Name</option>
+															<option value="">Bank Name - 1</option>
+															<option value="">Bank Name - 2</option>
+															<option value="">Bank Name - 3</option>
+															<option value="">Bank Name - 4</option>
+														</select>
+													</div>
+                        </div>
+												<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+													<div class="form-group-label-input">
+														<label class="form-label">Payment Date:</label>
+														<select class="form-control sumoselect search">
+															<option value="">Payment Date</option>
+															<option value="">Payment Date - 1</option>
+															<option value="">Payment Date - 2</option>
+															<option value="">Payment Date - 3</option>
+															<option value="">Payment Date - 4</option>
+														</select>
+													</div>
+                        </div>
+												<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                          <div class="form-group-label-input">
+														<label class="form-label">Payment Remarks:</label>
+														<input type="text" class="form-control" id="paymentRemarks" placeholder="Enter Payment Remarks" name="payment-remarks" />
+													</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                      <div class="form-group-input">
+												<button type="button" class="btn btn-save mr-3">Add</button>
+												<button type="button" class="btn btn-delete">Delete</button>
+											</div>
+                    </div>
+									</div>
+									<div class="card-inner-body border-1px mb-15 pb-0">
+										<div class="row">
+											<div class="col-3 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+												<div class="form-group-label-input">
+													<label class="form-label">Policy Sourced by:</label>
+													<input type="text" class="form-control" id="policySourcedBy" placeholder="Enter Policy Sourced by" name="policy-sourced-by" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer">
+							<div class="row">
+								<div class="col-12">
+									<button type="button" class="btn btn-save mr-3">Save</button>
+									<button type="button" class="btn btn-clear">Clear</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="row">
+				<div class="col-12">
+					<div class="card card-primary">
+						<div class="card-header bg-primary text-white">
+							<div class="admin-panel-heading">
+								<h3>Sumo Select Options</h3>
+							</div>
+						</div>
+						<div class="card-body pb-0">
+							<div class="row">
+								<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+									<div class="form-group-label-input">
+										<label class="form-label">Country:</label>
+										<select class="form-control sumoselect country">
+											<option value="">Select</option>
+											<option value="">India</option>
+											<option value="">Canada</option>
+											<option value="">USA</option>
+											<option value="">UK</option>
+											<option value="">Japan</option>
+											<option value="">Australia</option>
+											<option value="">Brazil</option>
+											<option value="">France</option>
+											<option value="">Georgia</option>
+											<option value="">Germany</option>
+											<option value="">Greece</option>
+											<option value="">Indonesia</option>
+											<option value="">Mali</option>
+											<option value="">Mexico</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+									<div class="form-group-label-input">
+										<label class="form-label">State:</label>
+										<select class="form-control sumoselect state">
+											<option value="">Select</option>
+											<option value="">Gujarat</option>
+											<option value="">Maharastra</option>
+											<option value="">Assam</option>
+											<option value="">Bihar</option>
+											<option value="">Goa</option>
+											<option value="">Punjab</option>
+											<option value="">Rajasthan</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+									<div class="form-group-label-input">
+										<label class="form-label">City:</label>
+										<select class="form-control sumoselect city" name="city" multiple="multiple">
+											<option value="">Nadiad</option>
+											<option value="">Anand</option>
+											<option value="" disabled="disabled">Vadodara</option>
+											<option value="">Ahmedabad</option>
+											<option value="">Rajkot</option>
+											<option value="">Bhavnagar</option>
+											<option value="">Jamnagar</option>
+											<option value="">Gandhinagar</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+									<div class="form-group-label-input">
+										<label class="form-label">Insurance Type:</label>
+										<select class="form-control sumoselect insurance" name="insurance" multiple="multiple" placeholder="Insurance Type">
+											<optgroup label="General Insurance">
+												<option value="">Health Insurance</option>
+												<option value="">Motor Insurance</option>
+												<option value="">Home Insurance</option>
+												<option value="">Fire Insurance</option>
+												<option value="">Travel Insurance</option>
+											</optgroup>
+											<optgroup label="Life Insurance">
+												<option value="">Term Life Insurance</option>
+												<option value="">Whole Life Insurance</option>
+												<option value="">Endowment Plans</option>
+												<option value="">Unit-Linked Insurance Plans</option>
+												<option value="">Child Plans</option>
+												<option value="">Pension Plans</option>
+											</optgroup>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer">
+							<div class="row">
+								<div class="col-12">
+									<button type="button" class="btn btn-success mr-3">Submit</button>
+									<button type="button" class="btn btn-danger">Cancel</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+		<!-- Add New Users Section Starts -->
+	</div>
+	<!-- Wrapper Section Ends -->
+  <!-- jQuery Library -->
+  <script src="js/jquery.min.js"></script>
+	<!-- SumoSelect Minified JS -->
+	<script src="js/jquery.sumoselect.min.js"></script>
+	<!-- Input Mask -->
+  <script src="js/jquery.inputmask.bundle.js"></script>
+	<!-- Custom JS -->
+	<script src="js/main.js"></script>
+</body>
+</html>
